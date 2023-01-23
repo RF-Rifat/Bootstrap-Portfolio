@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+
+.nav-ul{
+    width: 100%;
+}
+:root {
+    --clr-body-bg: #0B3C5D;
+    --clr-card-bg: hsl(0 0% 100%);
+    --clr-text: hsl(0 0% 15%);
+    --clr-heading: hsl(0 0% 25%);
+}
+
+.navbar-brand{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    background-color: #333 !important;
+    color: var(--clr-card-bg) !important;
+    font-size: larger !important;
+}
+
+nav ul li a {
+    color: rgb(253, 253, 253);
+    text-decoration: none;
+    position: relative;
+    padding: 10px 15px;
+    transition: all 1s;
+}
+
+nav ul li a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all .5s;
+}
+
+nav ul li a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+#navbar-1 {
+    animation: navbar-slide 0.5s ease-in-out forwards;
+}
+@keyframes navbar-slide {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+#navbar-1 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#navbar-2 li {
+    float: left;
+}
+
+#navbar-1 a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar-1 a:hover {
+    background-color: #ddd;
+    color: #000;
+}
+.fa-solid{
+   color: #fff;
+}
+#home{
+    height: 100vh;
+}
+#home-main{
+    height: 95vh;
+}
+#about{
+    height: 100vh;
+}
+#skill{
+    height: 100vh;
+}
+#service{
+    height: 100vh;
+}
+#contact{
+    height: 100vh;
+}
+#contact i{
+    color: black !important;
+}
