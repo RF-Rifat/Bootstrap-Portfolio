@@ -107,3 +107,39 @@ nav ul li a:hover:before {
 #contact i{
     color: black !important;
 }
+@media only screen and (max-width: 500px) {
+    .image-small-screen{
+        height: 10px;
+    }
+    .image-none{
+        display: none;
+    }
+    .d-xs-none{
+        display: none;
+    }
+    #home {
+        height: 80vh;
+    }
+    #service {
+        height: 120vh;
+    }
+
+    #contact {
+        height: 105vh;
+    }
+}
+@media only screen and (max-width: 300px) {
+    #contact {
+            height: 115vh;
+        }
+}
+@media only screen and (min-width: 992px) {
+    #contact {
+            height: 120vh;
+        }
+}
+@media only screen and (min-width: 1200px) {
+    #contact {
+            height: 95vh;
+        }
+}
